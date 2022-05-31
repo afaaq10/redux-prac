@@ -17,3 +17,8 @@ export const loggedIn = () => {
         type: 'LOGIN'
     }
 }
+export const tableoftwo = () => {
+    return {
+        type: 'TABLE'
+    }
+}
