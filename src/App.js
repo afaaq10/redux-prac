@@ -1,3 +1,9 @@
+/**
+ * @author Afaaq Majeed
+ * @link  https://github.com/afaaq10/redux-prac
+ */
+
+
 import './App.css';
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
