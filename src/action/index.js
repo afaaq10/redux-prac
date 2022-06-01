@@ -1,24 +1,20 @@
-export const increment = () => {
+export const increment = (x) => {
     return {
-        type: 'INCREMENT',
-
+        type: "INCREMENT",
+        payload: x
     }
+
 }
-
-export const decrement = () => {
+export const decrement = (x) => {
     return {
-        type: 'DECREMENT',
-
+        type: "DECREMENT",
+        payload: x
     }
+
 }
+export const login = () => {
+    return {
+        type: "LOGIN"
+    }
 
-export const loggedIn = () => {
-    return {
-        type: 'LOGIN'
-    }
-}
-export const tableoftwo = () => {
-    return {
-        type: 'TABLE'
-    }
 }
