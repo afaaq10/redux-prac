@@ -18,6 +18,9 @@ import {
 } from "react-router-dom";
 function App() {
 
+
+
+
   return (
     <div className="App">
       <Router>
@@ -26,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductListing />} />
           <Route path="/ProductComponent" element={<ProductComponent />} />
-          <Route path="/product/:productId" element={<ProductDetails />} />
+          <Route path="/:productId" element={<ProductDetails />} />
 
           <Route >404 not found</Route>
 

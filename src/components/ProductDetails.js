@@ -15,9 +15,7 @@ const ProductDetails = () => {
         const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
         dispatch(selectedProduct(response.data))
     }
-    useEffect(() => {
 
-    }, [])
 
     useEffect(() => {
         details()

@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import ProductReducer from '../redux/reducers/productReducer'
 const ProductComponents = () => {
     const products = useSelector((state) => state.productReducer.product)
-    const renderList = products.map((product) => {
-        const { id, title, image, description, price, category } = product
+    const renderList = products.map((x) => {
+        console.log("this is a product", x)
+        const { id, title, image, description, price, category } = x
         return (
             <div className="four wide column" key={id}>
-                <Link to={`/product/${id}`}>
+                <Link to={`/${id}`}>
                     <div className="ui link cards">
                         <div className="card">
                             <div className="image">
