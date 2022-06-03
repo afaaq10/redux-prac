@@ -5,7 +5,7 @@ import ProductReducer from '../redux/reducers/productReducer'
 const ProductComponents = () => {
     const products = useSelector((state) => state.productReducer.product)
     const renderList = products.map((x) => {
-        console.log("this is a product", x)
+
         const { id, title, image, description, price, category } = x
         return (
             <div className="four wide column" key={id}>
