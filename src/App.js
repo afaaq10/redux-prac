@@ -5,20 +5,34 @@
 
 
 import './App.css';
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
-import { increment, decrement, login } from './action'
+import Header from './components/Header'
+import ProductComponent from './components/ProductComponent'
+import ProductDetails from './components/ProductDetails'
+import ProductListing from './components/ProductListing'
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 function App() {
-  const count = useSelector((state) => state.counter)
-  const bool = useSelector((state) => state.login)
-  const dispatch = useDispatch()
+
   return (
     <div className="App">
-      <h1>{count}</h1>
-      <button onClick={() => dispatch(increment(5))}>+</button>
-      <button onClick={() => dispatch(decrement(5))}>-</button>
-      {!bool && <p>I am a boolean true</p>}
+      <Router>
 
+        <Header />
+        <Routes>
+          <Route path="/" element={<ProductListing />} />
+          <Route path="/ProductComponent" element={<ProductComponent />} />
+          <Route path="/product/:productId" element={<ProductDetails />} />
+
+          <Route >404 not found</Route>
+
+        </Routes>
+
+      </Router>
     </div>
   );
 }
