@@ -8,8 +8,10 @@ import { useEffect } from 'react'
 const ProductDetails = () => {
     const prod = useSelector((state) => state.selectedProduct)
     const { id, title, image, description, price, category } = prod
+
     const { productId } = useParams()
     console.log(productId)
+
     const dispatch = useDispatch()
     async function details() {
         const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
