@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductListing />} />
           <Route path="/ProductComponent" element={<ProductComponent />} />
-          <Route path="/:productId" element={<ProductDetails />} />
+          <Route path="/details/:productId" element={<ProductDetails />} />
 
           <Route >404 not found</Route>
 
