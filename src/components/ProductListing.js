@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductComponent from './ProductComponent'
-import { fetchProduct } from '../redux/action/productAction'
+import { fetchProducts } from '../redux/action/productAction'
 import { useDispatch } from 'react-redux'
 import axios from 'axios'
 import { useEffect } from 'react'
@@ -9,7 +9,7 @@ const ProductListing = () => {
 
 
     useEffect(() => {
-        dispatch(fetchProduct())
+        dispatch(fetchProducts())
     }, [])
     return (
 
