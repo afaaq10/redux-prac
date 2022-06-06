@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductListing />} />
 
-          <Route path="/details/:productId" element={<ProductDetails />} />
+          <Route path="/products/:productId" element={<ProductDetails />} />
 
           <Route path="/ErrorPage" element={<ErrorPage />} />
 
