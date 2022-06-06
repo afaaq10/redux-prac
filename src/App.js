@@ -9,7 +9,7 @@ import Header from './components/Header'
 import ProductComponent from './components/ProductComponent'
 import ProductDetails from './components/ProductDetails'
 import ProductListing from './components/ProductListing'
-
+import ErrorPage from './components/ErrorPage'
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,7 +31,7 @@ function App() {
           <Route path="/ProductComponent" element={<ProductComponent />} />
           <Route path="/details/:productId" element={<ProductDetails />} />
 
-          <Route >404 not found</Route>
+          <Route path="/ErrorPage" element={<ErrorPage />} />
 
         </Routes>
 
