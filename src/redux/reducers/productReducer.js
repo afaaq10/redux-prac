@@ -36,3 +36,4 @@ export const selectedProduct = (state = {}, { type, payload }) => {
 
 export default productReducer
 
+
