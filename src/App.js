@@ -6,7 +6,7 @@
 
 import './App.css';
 import Header from './components/Header'
-import ProductComponent from './components/ProductComponent'
+
 import ProductDetails from './components/ProductDetails'
 import ProductListing from './components/ProductListing'
 import ErrorPage from './components/ErrorPage'
@@ -28,7 +28,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<ProductListing />} />
-          <Route path="/ProductComponent" element={<ProductComponent />} />
+
           <Route path="/details/:productId" element={<ProductDetails />} />
 
           <Route path="/ErrorPage" element={<ErrorPage />} />
