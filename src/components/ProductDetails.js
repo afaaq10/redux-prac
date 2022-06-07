@@ -24,24 +24,32 @@ const ProductDetails = () => {
 
     return (
         <div className="ui fixed menu">
-            <div className="ui link cards">
-                <div className="card">
-                    <div className="image">
-                        <img src={image} alt={title} /> </div>
-                    <div className="content">
-                        <div className="header">
-                            {title}
-                        </div>
-                        <div className="meta price">
-                            ${price}
-                        </div>
-                        <div className="meta">
-                            {category}
+            {Object.keys(prod).length === 0 ? (
+                <div style={{ margin: "auto", padding: "10px", color: "blue" }}>...Loading</div>
+            ) : (
+
+                    <div className="ui link cards">
+                        <div className="card">
+                            <div className="image">
+                                <img src={image} alt={title} /> </div>
+                            <div className="content">
+                                <div className="header">
+                                    {title}
+                                </div>
+                                <div className="meta price">
+                                    ${price}
+                                </div>
+                                <div className="meta">
+                                    {category}
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+
+                )
+            }
         </div>
     )
+
 }
 export default ProductDetails
