@@ -24,7 +24,8 @@ const ProductDetails = () => {
     }, [productId])
 
     return (
-        <>
+    
+         <div className="ui fixed menu">
             {Object.keys(prod).length === 0 ? (
                 
                 <div style={{ display: "flex", margin: "auto", position: "relative", top: "105px", fontSize: "30px", padding: "10px", color: "blue" }}>
@@ -35,7 +36,7 @@ const ProductDetails = () => {
                 </div>
                 
             ) : (
-                <div className="ui fixed menu">
+               
                     <div className="ui link cards">
                         <div className="card">
                             <div className="image">
@@ -53,10 +54,12 @@ const ProductDetails = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+               
+              
                 )
             }
-      </>
+        </div>
+      
     )
 
 }
