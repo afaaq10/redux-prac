@@ -6,7 +6,7 @@ const ProductComponents = () => {
     const products = useSelector((state) => state.productReducer.product)
     const renderList = products.map((x) => {
         console.log("this is a product", x)
-        const { id, title, image, description, price, category } = x
+        const { id, title, image, description, price, category,rating } = x
         return (
             <div className="four wide column" key={id}>
                 <Link to={`/products/${id}`}>
@@ -23,6 +23,9 @@ const ProductComponents = () => {
                                 </div>
                                 <div className="meta">
                                     {category}
+                                </div>
+                                <div >
+                                  Rating:  {rating.rate}/5
                                 </div>
                             </div>
                         </div>

@@ -7,7 +7,8 @@ import { useSelector } from 'react-redux'
 import { useEffect } from 'react'
 const ProductDetails = () => {
     const prod = useSelector((state) => state.selectedProduct)
-    const { id, title, image, description, price, category } = prod
+    console.log(prod)
+    const { id, title, image, description, price, category,rating } = prod
 
     const { productId } = useParams()
     console.log(productId)
@@ -50,6 +51,9 @@ const ProductDetails = () => {
                                 </div>
                                 <div className="meta">
                                     {category}
+                                </div>
+                                <div >
+                                  Rating:  {rating.rate}/5
                                 </div>
                             </div>
                         </div>
