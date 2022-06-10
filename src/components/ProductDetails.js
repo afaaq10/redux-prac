@@ -28,7 +28,7 @@ const ProductDetails = () => {
          <div className="ui fixed menu">
             {Object.keys(prod).length === 0 ? (
                 
-                <div style={{ display: "flex", margin: "auto", position: "relative", top: "105px", fontSize: "30px", padding: "10px", color: "blue" }}>
+                <div style={{ display: "flex", margin: "auto", position: "relative", top: "105px", fontSize: "30px", padding: "10px", color: "blue", padding:"8px" }}>
                     <div>
                         ...Loading
                     <i className="fa fa-cog fa-spin" />
