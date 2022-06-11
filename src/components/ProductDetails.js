@@ -28,7 +28,7 @@ const ProductDetails = () => {
     
          <div className="ui fixed menu">
             {Object.keys(prod).length === 0 ? (
-                
+           
                 <div style={{ display: "flex", margin: "auto", position: "relative", top: "105px", fontSize: "30px", padding: "10px", color: "blue", padding:"8px",   }}>
                     <div>
                     <i style={{position:"relative", top:"20px"}} class="fa fa-refresh fa-spin" />

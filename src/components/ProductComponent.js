@@ -7,9 +7,14 @@ const ProductComponents = () => {
     const renderList = products.map((x) => {
         console.log("this is a product", x)
         const { id, title, image, description, price, category,rating } = x
+
+        
         return (
+        
             <div className="four wide column" key={id}>
-                <Link to={`/products/${id}`}>
+                 <Link to={`/products/${id}`}>
+
+              
                     <div className="ui link cards">
                         <div className="card">
                             <div className="image">
@@ -30,11 +35,17 @@ const ProductComponents = () => {
                             </div>
                         </div>
                     </div>
-                </Link>
-            </div>
-        )
-    }
+             
+
+
+
+         </Link>  
+        </div>
+     
+               
     )
+    }
+) 
 
     return (
         <>
