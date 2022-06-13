@@ -13,6 +13,7 @@ const ProductComponents = () => {
       
         return (
             <>
+            
             <div className="four wide column" key={id}>
               {{id} == 0 ? (
            
