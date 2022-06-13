@@ -38,3 +38,16 @@ export const removeSelectedProduct = () => {
 
 }
 
+// Learning redux toolkit in a program
+// const initialState={
+//     noOfCakes:10
+// }
+// createSlice({
+//     name:'toolkit',
+//     initialState,
+//     reducers{
+//         ordered:(state,action)=>{
+// state.noOfCakes=state.noOfCakes+action.payload
+//         }
+//     }
+// })
